@@ -1,0 +1,14 @@
+#CALCULATOR IN PYTHON
+print('Enter 2 no.s')
+num1=int(input())
+num2=int(input())
+op=input('Enter operators like- + , - , * , % ,/ : ')
+operator={
+  '+':num1+num2,
+  '-':num1-num2 if num1>num2 else num2-num1,
+  '*':num1*num2,
+  '/':num1/num2 if num2>num1 else num2/num1,
+  '%':num1%num2,
+  
+}
+print('Your resut is : ',operator.get(op,-1))
