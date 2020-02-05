@@ -1,0 +1,27 @@
+#ROCK PAPER SCISSORS 
+print('Now you are going to play the game of ROCK PAPER &SCISSORS')
+print('Enter input as the number given below: ')
+print('1: ROCK')
+print('2: PAPER')
+print('3: SCISSORS') 
+player1=int(input('Player 1: '))
+player2=int(input('Player 2: '))
+if player1==1 and player2==1 :
+  print('O-Oh! Its a tie.')
+elif player1==2 and player2==2 :
+  print('O-Oh! Its a tie.')
+elif player1==3 and player2==3 :
+  print('O-Oh! Its a tie.')
+elif player1==1 and player2==2 :
+  print('Hurray! player2 Wins.')
+elif player1==2 and player2==1 :
+  print('Hurray! player1 Wins.')
+elif player1==2 and player2==3 :
+  print('Hurray! player2 Wins.')
+elif player2==3 and player1==2 :
+  print('Hurray! player1 Wins.')
+elif player1==3 and player2==1 :
+  print('Hurray! player2 Wins.')
+elif player2==1 and player1==3 :
+  print('Hurray! player1 Wins.')
+
