@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char ch[100];
+  int i;
+  printf("Enter your String : ");
+    scanf("%s",ch);
+  for(i=0;i<=strlen(ch);i++)
+  {
+
+  if(ch[i]>=65&&ch[i]<90)
+  
+    ch[i]=ch[i]+32;
+    
+  }
+  printf("Lower case letters : %s",ch);
+  
+  return 0;
+}
