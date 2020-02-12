@@ -1,0 +1,12 @@
+#USE PYTHON IDLE FOR RUNNING THIS CODE.
+from tkinter import *
+parent=Tk()
+redbut=Button(parent,text='Red button',fg='red')
+redbut.pack(side=RIGHT)
+greenbut=Button(parent,text='Green button',fg='green')
+greenbut.pack(side=RIGHT)
+bluebut=Button(parent,text='Blue button',fg='blue')
+bluebut.pack(side=RIGHT)
+yellowbut=Button(parent,text='Yello button',fg='yellow')
+yellowbut.pack(side=RIGHT)
+parent.mainloop()
