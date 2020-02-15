@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    int a[50],n,i,j,temp;
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+    printf("Enter the array..This is the array before sorting :");
+    for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+    }
+    for(i=1;i<n-1;i++)
+    {
+        j=i;
+        while(j>0&&a[j-1]>a[j])
+        {
+            temp=a[j];
+            a[j]=a[j-1];
+            a[j-1]=temp;
+            j--;
+        }
+    }
+    printf("After sorting : ");
+    for(i=0;i<n-1;i++)
+    {
+        printf("%d\n",a[i]);
+    }
+    return 0;
+}
