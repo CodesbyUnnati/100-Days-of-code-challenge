@@ -1,0 +1,33 @@
+//C PROGRAM TO SOLVE A QUADRATIC EQUATION; hence finding it's ROOT.
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float a,b,c;
+  float root1,root2,d;
+  printf("Enter Quadratic Equation: ");
+  scanf("%f %f %f",&a,&b,&c);
+  d=b*b-4*a*c;
+  if(d<0)
+  {
+  printf("Roots are complex numbers:");
+  printf("%.3f + %.3f",(-b/2*a),sqrt(-d)/2*a);
+  printf("%.3f + %.3f",(-b/2*a),-sqrt(-d)/2*a);
+  }
+
+else if(d==0)
+{
+printf("Roots are Equal.");
+root1=(-b/2*a);
+printf("Ropt of Euation is: %.3f",root1);
+}
+else 
+{
+  printf("Roots are real numbers: ");
+  root1=(-b+sqrt(d)/2*a);
+  root2-(-b-sqrt(d)/2*a);
+  printf("Roots are %.3f %.3f",root1,root2);
+
+  }
+  return 0;
+}
