@@ -1,0 +1,21 @@
+#MAP
+#The map() function calls the specified function for each item of an iterable (such as string, list, tuple or dictionary) and returns a list of results.
+def addition(n):
+  return n+n
+numbers=(1,2,3,4,5)
+result=map(addition,numbers)
+print (list(result))
+
+#OUTPUT
+#[2,4,6,8,10]
+
+#LAMBDA
+#Lambda functions are used when you need a function for a short period of time. This is commonly used when you want to pass a function as an argument to higher-order functions, that is, functions that take other functions as their arguments.
+
+numbers=(1,2,3,4,5)
+result=map(lambda x:x+x,numbers)
+print(list(result))
+
+#OUTPUT
+#[2,4,6,8,10]
+
