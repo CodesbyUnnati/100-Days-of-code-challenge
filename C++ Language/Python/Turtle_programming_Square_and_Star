@@ -1,0 +1,16 @@
+#THIS CODE GENERATES A SQUARE IN YOUR WORKSPACE..
+#RUN THIS CODE IN PYTHON IDLE
+import turtle
+tur=turtle.Turtle()
+for i in range(4):
+ tur.forward(40)
+ tur.right(90)
+turtle.done()
+
+# FLOWER STAR
+import turtle
+tur=turtle.Turtle()
+for i in range(50):
+ tur.forward(50)
+ tur.right(140)
+turtle.done()
