@@ -1,0 +1,13 @@
+#THIS CODE WILL GENERATE A HEXAGON IN YOUR SCREEN
+import turtle
+tut=turtle.Turtle()
+
+num_sides=6
+side_length=70
+angle=360.0/num_sides
+
+for i in range(num_sides):
+ tut.forward(side_length)
+ tut.right(angle)
+ 
+turtle.done()
