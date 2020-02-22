@@ -1,0 +1,25 @@
+//PROGRAM FOR DECIMAL TO BINARY CONVERSION
+#include<iostream>
+using namespace std;
+void decTobin(int n)
+{
+  int bin_num[50];
+  int i=0;
+  while(n>0)
+  {
+  bin_num[i]=n%2;
+  n=n/2;
+  i++;
+}
+cout<<"Binary conversion is: ";
+for(int j=i-1;j>=0;j--)
+cout<<bin_num[j];
+}
+int main()
+{
+  int n;
+  cout<<"Enter a number: ";
+  cin>>n;
+  decTobin(n);
+  return 0;
+}
