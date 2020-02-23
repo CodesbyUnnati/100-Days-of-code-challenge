@@ -1,0 +1,19 @@
+//BINARY TO DECIMAL CONVERSION
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  long int n,i,x=0,a;
+  printf("Enter the number in the form of 0's and 1's : ");
+  scanf("%ld",&n);
+  printf("The conversion is: ");
+  for(i=0;n!=0;++i)
+  {
+    a=n%10;
+    x=(a)*(pow(2,i))+x;
+    n=n/10;
+  }
+  printf("%ld",x);
+  return 0;
+
+}
