@@ -1,0 +1,9 @@
+#TO FIND THE SUM OF THE LIST ANF FIND OUT THE MAXIMUM ELEMENT IN LIST
+import functools
+lis=[1,2,3,4,5]
+print('The Sum of list is: ',end='')
+print(functools.reduce(lambda a,b:a+b,lis))
+print('The maximum element of list is:',end='')
+print(functools.reduce(lambda a,b:a if a>b else b,lis))
+      
+                       
