@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char mystrg[60];
+    int len, g;
+
+    printf("Program in C for reversing a given string \n ");
+    printf("Please insert the string you want to reverse: ");
+    
+    scanf( "%s", mystrg );
+
+    len = strlen(mystrg);
+
+    for(g = len - 1; g >= 0; g--) {
+        printf("%c", mystrg[g]);
+    }
+    return 0;
