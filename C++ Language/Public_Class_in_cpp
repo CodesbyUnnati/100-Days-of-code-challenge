@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+class student
+{
+  public:
+  char name[20];
+  int roll;
+  void get_roll()
+  { 
+    cout<<"Enter your roll number: ";
+    cin>>roll;
+  }
+  void get_name()
+  {
+    cout<<"Enter Name: ";
+    cin>>name;
+
+  }
+  void disp()
+  {
+    cout<<"Your Name is: "<<name<<endl;
+  }
+  void disp2()
+  {
+    cout<<"Your Roll is: "<<roll;
+  }
+
+};
+int main() {
+  student obj;
+  obj.get_roll();
+  obj.get_name();
+  obj.disp();
+  obj.disp2();
+
+return 0;
+}
