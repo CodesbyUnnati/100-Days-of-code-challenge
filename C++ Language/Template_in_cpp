@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+template <typename T>    //MANDATORY
+T mymax(T x,T y)                   //FUNCTION NAME
+{
+  cout<<"The Greater is : ";
+return ( x > y )? x : y;
+}
+int main()
+{
+  cout<< mymax<int>(3,7)<<endl;
+  cout<< mymax<double>(89.5,76.3)<<endl;
+  cout<< mymax<char>('g','t')<<endl;
+
+  return 0;
+}
