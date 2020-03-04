@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>WEB PAGE</title>
+<style type="text/css">
+div
+{
+   width:200px;
+   height:175px;
+   background-color:red;
+   border:5px solid black;
+}
+#div2
+{
+   transform: rotate(30deg);
+    -ms-transform:rotate(30deg);
+   -moz-transform:rotate(30deg);
+   background-color: yellow;
+
+}
+</style>
+</head>
+<body>
+<div><strong>HELLO WORLD!</strong></div>
+<div id="div2"><strong>HELLO CSS3</strong></div>
+</body>
+</html>
