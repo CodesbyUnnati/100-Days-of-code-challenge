@@ -1,0 +1,83 @@
+<!-- TO VIEW THIS PLEASE TRY TO REDUCE THE SIZE OF YOUR BROWSER -->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible"content="ie=edge">
+	<title>Media Queries</title>
+	<style>
+		body{
+		font-family:Arial,Helvetica,sans-serif;
+		background: gray;
+		color: black;
+		text-align: center;
+		padding-top: 100px;
+	        }
+	      
+	        	h1
+	        	{ 
+	        		display: none;
+
+	            }
+	        /*SMARTPHONES*/
+	        @media only screen and (max-width: 500px)
+	        {
+	        body{
+                 background: red;   
+	            }
+	            #Smartphone h1{
+	            	display: block;
+	                         }
+	        }
+                /*Tablet*/
+                @media(min-width: 501px) and (max-width: 768px)
+                {
+                	body{
+                		background:blue;
+                	     }
+                	#Tablet h1{
+                		display:block;
+                	          }
+                }
+                	/*Normal*/
+                	@media (min-width: 769px) and (max-width: 1200px){
+                		body
+                		{
+                			background: green;
+                		}
+                		#Normal h1{
+                			display: block;
+                		          }
+                	                         }
+                	 @media(min-width: 1201px) and (max-width: 1500px)
+                	 {
+                	 	body{
+                	 		background: yellow;
+                	 	    }
+                	 	#Landscape h1{
+                	 		display: block;
+                	 	              
+                	                   }
+                	 }
+                	 @media(min-width: 1501px) and (max-width: 1800px)
+                	 {
+                	 	body{
+                	 		background: pink;
+                	 	    }
+                	 	    #widescreen h1{
+                	 	    	display: none;
+                	 	                  }
+                	 }
+                
+	</style>
+</head>
+<body>
+	<div id="widescreen"><h1>widescreen</h1></div>
+	<div id="Smartphone"><h1>Smartphone</h1></div>
+	<div id="Tablet"><h1>Tablet</h1></div>
+	<div id="Normal"><h1>Normal</h1></div>
+	<div id="Landscape"><h1>Landscape</h1></div> 
+
+</body>
+</html>
