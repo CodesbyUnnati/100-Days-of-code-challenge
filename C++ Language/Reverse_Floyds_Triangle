@@ -1,0 +1,23 @@
+#include <bits/stdc++.h> 
+using namespace std; 
+
+void printReverseFloyd(int n) 
+{ 
+	int curr_val = n * (n + 1) / 2; 
+	for (int i = n; i >= 1; i--) { 
+		for (int j = i; j >= 1; j--) { 
+			cout << setprecision(2); 
+			cout << curr_val-- << " "; 
+		} 
+
+		cout << endl; 
+	} 
+} 
+int main() 
+{ 
+	int n;
+  cout<<"Enter the number:";
+  cin>>n; 
+	printReverseFloyd(n); 
+	return 0; 
+}
