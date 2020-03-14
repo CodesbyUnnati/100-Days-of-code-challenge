@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<time.h>
+int main(){
+  struct tm*local;
+  time_t t=time(NULL);
+  local=localtime(&t);
+  printf("Local time & date is: %s\n",asctime(local));
+  return 0;
+}
