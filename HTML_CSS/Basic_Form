@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+
+</head>
+<body>
+    <form>
+        Name:<input type="text"><br><br>
+        College:<input type="text"><br>
+        Reg no.:<input type="text"><br><br>
+        Section:<input type="text"><br><br>
+        Age:<input type="number required"><br><br>
+        Birthday:<input type="date"><br><br>
+        Gender:<br><br>
+        Male:<input type="radio" name="Gender"><br><br>
+        Female:<input type="radio" name="Gender"><br><br>
+        Phone: <br><br>
+        MI<input type="checkbox"><br> 
+        Oneplus<input type="checkbox"><br>
+        Apple<input type="checkbox"><br>
+        Honour<input type="checkbox"><br><br><br>
+        Course:<br>
+        <select>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="Medical">Medical</option>
+            <option value="Law">Law</option>
+        </select><br><br>
+        <input type="submit" value="Proceed"> <input type="reset" value="Reset">
+        
+    </form>
+</body>
+</html>
