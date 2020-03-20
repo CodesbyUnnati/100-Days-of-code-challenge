@@ -1,0 +1,27 @@
+#include<stdio.h>
+void swap(int *x,int *y)
+{
+  int temp=*x;
+  *x=*y;
+  *y=temp;
+}
+void BubbleSort(int A[],int n)
+{ int i,j,x;
+   for(i=0;i<n-1;i++)
+   {
+     for(j=0;j<n-i-1;j++)
+     {
+       if(A[j]>A[j+1])
+       swap(&A[j],&A[j+1]);
+     }
+   } 
+}
+int main()
+{
+int A[]={9,9,8,7,6,5,4,3,2,1},n=10,i;
+BubbleSort(A,10);
+for(i=1;i<10;i++)
+printf(" %d",A[i]);
+printf("\n");
+return 0;
+}
