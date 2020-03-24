@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+ {
+ int arri[]={1,2,3};
+ int *ptri=arri;
+ char arrc[]={1,2,3};
+ char *ptrc=arrc;
+ cout<<"sizeof arri[]= "<<sizeof(arri)<<" ";
+ cout<<"sizeof ptri= "<<sizeof(ptri)<<" ";
+cout<<"sizeof arrc[]= "<<sizeof(arrc)<<" ";
+cout<<"sizeof ptrc[]= "<<sizeof(ptrc)<<" ";
+  return 0;
+}
+
+
+//OUTPUT
+sizeof arri[]= 12 sizeof ptri= 8 sizeof arrc[]= 3 sizeof ptrc[]= 8 
