@@ -1,0 +1,27 @@
+import math
+print("Enter First number:")
+firstnum=float(input())
+print("Enter Operator or math function:")
+op=input().lower()
+print("Enter Second Number:")
+secnum=float(input())
+
+if op =="+" :
+    print(firstnum, "+" , secnum, "=" , firstnum + secnum)
+elif op== "-":
+        print(firstnum, "-", secnum, "=" , firstnum - secnum)
+elif op =="*":
+    print(firstnum ,"*", secnum, "=" , firstnum * secnum)
+elif op== "/":
+        print(firstnum, "/", secnum, "=" , firstnum / secnum)
+elif op== "^":
+        print(firstnum, "^", secnum, "=" , firstnum ** secnum)
+elif op== "r":
+        print(firstnum, "root",secnum, "=", secnum ** (1 / firstnum))
+elif op== "%":
+       print(firstnum, "%" , secnum, "=", firstnum % secnum)
+else:
+        print("incorrect operator")
+
+    
+#RUN ON ANY PYTHON COMPILER
