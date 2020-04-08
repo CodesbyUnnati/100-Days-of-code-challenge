@@ -1,0 +1,18 @@
+import collections
+spam=collections.OrderedDict()
+spam['b']=2
+spam['c']=3
+spam['a']=1
+print(spam)
+for key,value in spam.items():
+ print(key,value)
+
+
+
+
+
+# OUTPUT
+#OrderedDict([('b', 2), ('c', 3), ('a', 1)])
+#b 2
+#c 3
+#a 1
