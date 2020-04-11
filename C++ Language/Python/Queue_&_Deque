@@ -1,0 +1,27 @@
+import collections
+queue=collections.deque()
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append(4)
+queue.append(5)
+print(queue)
+print(queue.popleft())
+print(queue.popleft())
+print(queue.popleft())
+print(queue)
+print(queue.pop())
+print(queue)
+
+
+
+
+#OUTPUT
+#deque([1, 2, 3, 4, 5])
+#1
+#2
+#3
+#deque([4, 5])
+#5
+#deque([4])
+
