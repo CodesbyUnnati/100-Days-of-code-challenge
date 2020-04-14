@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+float ans=0;
+
+float inc=1.0;
+
+int N,P;
+
+cout<<"Enter the Square Number: ";
+
+cin>>N;
+
+cout<<"Enter the precision you want in the Square root answer:";
+
+cin>>P;
+
+for(int times=0;times<=P;times++)
+    {
+while(ans*ans<=N)
+{
+  ans=ans+inc;
+}
+ans=ans-inc;
+
+inc=inc/10;
+    }
+cout<<"Answer is: "<<ans;
+
+return 0;
+}
