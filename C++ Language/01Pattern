@@ -1,0 +1,34 @@
+/* TO PRINT THE FOLLOWING PATTERN
+  0
+  10
+  010
+  1010
+  01010
+  101010
+*/
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,i;
+cout<<"Enter number of rows: ";
+cin>>n;
+for(i=0;i<=n;i++)
+{
+int val = i % 2 == 0 ? 1 : 0;
+
+for(int count = 1;count <= i;count++)
+{
+cout<<val;
+//FOR 0
+val = 1 - val;
+}
+cout<<endl;
+}
+
+return 0;
+}
+
+
+
+  
