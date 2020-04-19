@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function myfunc() {
+            var name = document.getElementById("name").value;
+            localStorage.setItem("textvalue", name);
+            return false;
+        }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Login Form</h2>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()" action="page2.html" method="POST">
+            <div class="input_feild">
+                <input type="text" placeholder="Name" id="name" />
+            </div>
+            <div class="input_feild">
+                <input type="number" placeholder="Age" id="age" min="0" />
+            </div>
+            <div class="input_feild">
+                <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="input_feild">
+                <input type="tel" placeholder="Phone Number" id="number" max="12" />
+            </div>
+            <div class="input_feild">
+                <textarea id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Submit" onclick="myfunc();" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
