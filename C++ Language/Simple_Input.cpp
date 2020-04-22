@@ -1,3 +1,15 @@
+//TO PRINT NUMBERS ENTERED BY THE USER TILL ITS SUM IS NEGATIVE
+/*Input=2
+        88
+       -10
+       -100
+       
+       Output
+       2
+       88
+       -10
+ */
+
 #include<iostream>
 using namespace std;
 
