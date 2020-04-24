@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a[100], freq[100];
+
+    int n, i, j;
+    int count;
+
+    cout << "Enter the total numbers: ";
+
+    cin >> n;
+    cout << "The numbers are:  " << endl;
+    for (i = 0; i < n; i++)
+    {
+        cin >> a[i];
+        freq[i] = -1;
+        cout << a[i] << endl;
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        count = 1;
+
+        for (j = i + 1; j < n; j++)
+        {
+
+            if (a[i] == a[j])
+
+            {
+
+                count++;
+                freq[j] = 0;
+            }
+        }
+        if (freq[i] != 0)
+
+        {
+
+            freq[i] = count;
+        }
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        if (freq[i] != 0)
+            cout << "The number " << a[i] << " occur " << freq[i] << " times." << endl;
+    }
+    return 0;
+}
