@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+</head>
+
+<body>
+	
+
+    <button id="button1"> SUBMIT</button>
+</body>
+
+</html>
+
+
+CSS
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #B80D16;
+    min-height: 100vh;
+}
+
+#button1 {
+    padding: 30px 30px 30px 30px;
+    color:#212121;
+    background-color: #1BA160;
+    outline:none;
+    font-family: 'Times New Roman';
+    font-weight: 900;
+    border-radius: 20px;
+    font-size: 3rem;
+
+}
