@@ -1,0 +1,69 @@
+/* INPUT
+
+Write a program to display the sizes of basic four datatypes i.e integer, double, float, character.
+
+Input:
+The first line of input contains integer T denoting the number of test cases. For each test case, the user can input any of the above data types.  
+
+Output:
+For each test case, there is a single line output displaying the size of that data type.
+
+Constraints:
+1<=T<=100
+
+Example:
+Input:
+4
+1
+@
+7.98
+9.985647851
+Output:
+4
+1
+4
+8
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void checkStringType(string str) {
+    int len = str.length();
+    if(len == 1) {
+        if(str[0] >= '0' && str[0] <= '9') {
+            cout << sizeof(int);
+        } else {
+            cout << sizeof(char);
+        }
+    } else {
+        string::size_type pos = str.find('.');
+        if(pos == string::npos) {
+            cout << sizeof(int);
+        } else {
+            string fromDecimalPoint = str.substr(pos-1);
+            if(fromDecimalPoint.length() > 7) {
+                cout << sizeof(double);
+            } else {
+                cout << sizeof(float);
+            }
+        }
+    }
+    cout << "\n";
+}
+
+int main() {
+	int numOfCases;
+	cin >> numOfCases;
+	while(numOfCases > 0) {
+	    string str;
+	    cin >> str;
+	    checkStringType(str);
+	    
+	    numOfCases--;
+	}
+	
+	
+	return 0;
+}
