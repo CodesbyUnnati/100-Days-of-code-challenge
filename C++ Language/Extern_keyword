@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+int main()
+{
+extern int a;
+printf("%d",a);
+
+return 0;
+}
+
+/*This will show error as we can declare
+the extern but not define it somewhere in 
+the memory*/
+
+/*Extern keywords as the name specifies
+is used to declare variable somewhere outside
+the block. */
+
+
+#include<stdio.h>
+void main()
+{
+extern a;
+printf("%d",a);
+
+}
+int a=10;
+
+//This will give the output as 10.
+
+/* We can write like this i.e we can declare 
+the extern as many times we want but we cannot
+define multiple times
+*/
+
+#include<stdio.h>
+void main()
+{
+extern a;
+extern a;
+extern a;
+prinf("%d",a);
+}
+int a=10;
+
+//Output is only 10.
+
+// Extern is global variable and auto is local.
+
+
