@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+private:
+int id;
+string name;
+int age;
+
+public:
+
+void getname(int i,string n,int a)
+{
+id=i;
+name=n;
+age=a;
+}
+
+void displayname()
+{ 
+  cout<<"ID: "<<id<<endl;
+cout<<"Name: " <<name<<endl;
+cout<<"Age: "<<age<<endl;
+}
+
+};
+int main()
+{
+Employee obj;
+obj.getname(12,"unnati",19);
+obj.displayname();
+return 0;
+}
+
+//OUTPUT
+/*
+12
+unnati
+19
+*/
+
+
+
+
+
