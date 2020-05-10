@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Distance
+{
+private:
+int meters;
+public:
+Distance (){
+metres=0;
+}
+void display ()
+{
+cout<<"Meters value: "<<meters;
+}
+friend void addDistance(&d); //Pass by reference
+{d.meters=d.meters+5;}
+};
+int main()
+{
+ Distance d1;
+ d1 display();
+ addDistance(d1);
+ d1.display();
+ return 0;
+}
+
+
+/* OUTPUT
+Meters value: 0
+Meters value: 5*/
