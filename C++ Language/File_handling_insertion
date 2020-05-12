@@ -1,0 +1,22 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+char a[100];
+cout<<"Enter your name and age-";
+cin.getline(arr,100);
+ofstream myfile("unnati.txt");
+myfile<<arr;
+myfile.close();
+cout<<"File operation performed successfully"<<endl;
+
+return 0;
+}
+
+
+
+
+
+
+
