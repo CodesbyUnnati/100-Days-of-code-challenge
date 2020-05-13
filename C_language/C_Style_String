@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+//C Style Strings
+char str1[100];
+cout<<"Enter your name: "<<endl;
+cin.getline(str1,100);
+cout<<"Name is: "<<str1<<endl;
+return 0;
+}
